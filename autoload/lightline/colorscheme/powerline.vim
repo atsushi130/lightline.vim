@@ -6,18 +6,18 @@
 " =============================================================================
 
 let s:p = {'normal': {}, 'inactive': {}, 'insert': {}, 'replace': {}, 'visual': {}, 'tabline': {}}
-let s:p.normal.left = [ ['darkestgreen', 'brightgreen', 'bold'], ['white', 'gray4'] ]
-let s:p.normal.right = [ ['gray5', 'gray10'], ['gray9', 'gray4'], ['gray8', 'gray2'] ]
+let s:p.normal.left = [ ['font_for_cyan', 'customcyan', 'bold'], ['font_for_pink', 'custompink'] ]
+let s:p.normal.right = [ ['font_for_cyan', 'customcyan'], ['font_for_pink', 'custompink'], [ 'font_for_yellow', 'customyellow' ] ]
 let s:p.inactive.right = [ ['gray1', 'gray5'], ['gray4', 'gray1'], ['gray4', 'gray0'] ]
 let s:p.inactive.left = s:p.inactive.right[1:]
-let s:p.insert.left = [ ['darkestcyan', 'white', 'bold'], ['white', 'darkblue'] ]
-let s:p.insert.right = [ [ 'darkestcyan', 'mediumcyan' ], [ 'mediumcyan', 'darkblue' ], [ 'mediumcyan', 'darkestblue' ] ]
+let s:p.insert.left = [ [ 'font_for_cyan', 'customcyan', 'bold' ], ['font_for_pink', 'custompink', 'bold'] ]
+let s:p.insert.right = [ [ 'font_for_cyan', 'customcyan' ], [ 'font_for_pink', 'custompink' ], [ 'font_for_yellow', 'customyellow' ] ]
 let s:p.replace.left = [ ['white', 'brightred', 'bold'], ['white', 'gray4'] ]
-let s:p.visual.left = [ ['darkred', 'brightorange', 'bold'], ['white', 'gray4'] ]
+let s:p.visual.left = s:p.insert.left
 let s:p.normal.middle = [ [ 'gray7', 'gray2' ] ]
-let s:p.insert.middle = [ [ 'mediumcyan', 'darkestblue' ] ]
-let s:p.replace.middle = s:p.normal.middle
-let s:p.replace.right = s:p.normal.right
+let s:p.insert.middle = [ [ 'font_for_yellow', 'customyellow' ] ]
+let s:p.replace.middle = s:p.insert.middle
+let s:p.replace.right = s:p.insert.right
 let s:p.tabline.left = [ [ 'gray9', 'gray4' ] ]
 let s:p.tabline.tabsel = [ [ 'gray9', 'gray1' ] ]
 let s:p.tabline.middle = [ [ 'gray2', 'gray8' ] ]

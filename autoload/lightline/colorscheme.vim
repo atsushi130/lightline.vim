@@ -9,6 +9,12 @@ let s:save_cpo = &cpo
 set cpo&vim
 
 let s:cuicolor = {
+      \ 'customcyan'     : 31,
+      \ 'custompink'     : 125,
+      \ 'customyellow'   : 178,
+      \ 'font_for_cyan'  : 230,
+      \ 'font_for_pink'  : 230,
+      \ 'font_for_yellow': 238,
       \ 'black'          : 16,
       \ 'white'          : 231,
       \
