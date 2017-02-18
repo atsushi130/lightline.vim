@@ -6,16 +6,16 @@
 " =============================================================================
 
 let s:p = {'normal': {}, 'inactive': {}, 'insert': {}, 'replace': {}, 'visual': {}, 'tabline': {}}
-let s:p.normal.left = [ ['font_for_cyan', 'customcyan', 'bold'], ['font_for_pink', 'custompink'] ]
-let s:p.normal.right = [ ['font_for_cyan', 'customcyan'], ['font_for_pink', 'custompink'], [ 'font_for_yellow', 'customyellow' ] ]
+let s:p.normal.left = [ ['230', '31', 'bold'], ['230', '125'] ]
+let s:p.normal.right = [ ['230', '31'], ['230', '125'], [ '238', '178' ] ]
 let s:p.inactive.right = [ ['gray1', 'gray5'], ['gray4', 'gray1'], ['gray4', 'gray0'] ]
 let s:p.inactive.left = s:p.inactive.right[1:]
-let s:p.insert.left = [ [ 'font_for_cyan', 'customcyan', 'bold' ], ['font_for_pink', 'custompink', 'bold'] ]
-let s:p.insert.right = [ [ 'font_for_cyan', 'customcyan' ], [ 'font_for_pink', 'custompink' ], [ 'font_for_yellow', 'customyellow' ] ]
+let s:p.insert.left = [ [ '230', '31', 'bold' ], ['230', '125', 'bold'] ]
+let s:p.insert.right = [ [ '230', '31' ], [ '230', '125' ], [ '238', '178' ] ]
 let s:p.replace.left = [ ['white', 'brightred', 'bold'], ['white', 'gray4'] ]
 let s:p.visual.left = s:p.insert.left
 let s:p.normal.middle = [ [ 'gray7', 'gray2' ] ]
-let s:p.insert.middle = [ [ 'font_for_yellow', 'customyellow' ] ]
+let s:p.insert.middle = [ [ '238', '178' ] ]
 let s:p.replace.middle = s:p.insert.middle
 let s:p.replace.right = s:p.insert.right
 let s:p.tabline.left = [ [ 'gray9', 'gray4' ] ]
